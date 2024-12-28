@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BITSMap</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        #image-container {
+            position: relative;
+        }
+
+        .button {
+            position: absolute;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            outline: none;
+        }
+
+        #ram { 
+            top: 38%; 
+            left: 28%; 
+            width: 110px; 
+            height: 200px;
+        }
+        #mala { 
+            top: 45%; 
+            left: 15%; 
+            width: 120px; 
+            height: 200px;
+        }
+        #skylab { 
+            top: 10%; 
+            left: 13%; 
+            width: 140px; 
+            height: 120px;
+        }
+        #science { 
+            top: 25%; 
+            left: 13%; 
+            width: 140px; 
+            height: 90px;
+        }
+        #rotunda { 
+            top: 20%; 
+            left: 40%; 
+            width: 200px; 
+            height: 100px;
+        }
+        #clock { 
+            top: 6%; 
+            left: 45%; 
+            width: 100px; 
+            height: 100px;
+        }
+        #birla { 
+            top: 15%; 
+            left: 8%; 
+            width: 50px; 
+            height: 60px;
+        }
+        #malb { 
+            top: 45%; 
+            left: 10%; 
+            width: 90px; 
+            height: 200px;
+        }
+
+        #krishna { 
+            top: 38%; 
+            left: 60%; 
+            width: 115px; 
+            height: 200px; 
+        }
+
+        #budh { 
+            top: 75%; 
+            left: 28%; 
+            width: 114px; 
+            height: 200px; 
+        }
+        #malc { 
+            top: 70%; 
+            left: 8%; 
+            width: 90px; 
+            height: 100px; 
+        }
+        #looters { 
+            top: 70%; 
+            left: 15%; 
+            width: 90px; 
+            height: 100px; 
+        }
+
+        #gandhi { 
+            top: 75%; 
+            left: 60%; 
+            width: 119px; 
+            height: 200px; 
+        }
+        #vk { 
+            top: 38%; 
+            left: 75%; 
+            width: 270px; 
+            height: 200px; 
+        }
+        #bg { 
+            top: 75%; 
+            left: 75%; 
+            width: 270px; 
+            height: 200px; 
+        }
+
+        #backButton {
+            position: absolute;
+            bottom: 2.5%;
+            left: 47%;
+            background-color: #4CAF50; 
+            color: white; 
+            padding: 15px 20px; 
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="image-container">
+    <img id="mainImage" src="resources/initial.png" alt="Initial Photo">
+
+    <button class="button" id="ram" onclick="changeImage('resources/ram.jpg')"></button>
+    <button class="button" id="budh" onclick="changeImage('resources/budh.jpg')"></button>
+    <button class="button" id="krishna" onclick="changeImage('resources/krishna.jpg')"></button>
+    <button class="button" id="gandhi" onclick="changeImage('resources/gandhi.jpg')"></button>
+    <button class="button" id="bg" onclick="changeImage('resources/bhagirtath.png')"></button>
+    <button class="button" id="vk" onclick="changeImage('resources/vk.png')"></button>
+    <button class="button" id="mala" onclick="changeImage('resources/mala.png')"></button>
+    <button class="button" id="malb" onclick="changeImage('resources/malb.png')"></button>
+    <button class="button" id="malc" onclick="changeImage('resources/malc.png')"></button>
+    <button class="button" id="looters" onclick="changeImage('resources/looters.jpg')"></button>
+    <button class="button" id="science" onclick="changeImage('resources/science.jpg')"></button>
+    <button class="button" id="birla" onclick="changeImage('resources/birla.jpg')"></button>
+    <button class="button" id="skylab" onclick="changeImage('resources/skylab.jpg')"></button>
+    <button class="button" id="rotunda" onclick="changeImage('resources/rotunda.jpg')"></button>
+    <button class="button" id="clock" onclick="changeImage('resources/clock.jpg')"></button>
+</div>
+
+<button class="button" id="backButton" onclick="changeImage('resources/initial.png')">Back to Initial</button>
+
+<script>
+    function changeImage(imageSrc) {
+        document.getElementById('mainImage').src = imageSrc;
+    }
+</script>
+
+</body>
+</html>
